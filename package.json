@@ -1,0 +1,47 @@
+{
+    "config": {
+        "puppeteer_download_path": "./node_modules/puppeteer/.local-chromium"
+    },
+    "name": "qc_automation_05_2021",
+    "version": "1.0.0",
+    "description": "Đây là repository phục vụ cho việc dạy học khóa QC Automation 05/2021 được tổ chức bởi: CrossTech",
+    "main": "codecept.conf.js",
+    "dependencies": {
+        "cucumber": "^7.0.0-rc.0",
+        "g": "^2.0.1",
+        "json-server": "^0.16.3",
+        "pageres-cli": "^6.0.0",
+        "webdriverio": "^7.6.0"
+    },
+    "devDependencies": {
+        "@codeceptjs/configure": "^0.6.2",
+        "@codeceptjs/examples": "^1.2.1",
+        "@codeceptjs/ui": "^0.4.3",
+        "Faker": "^0.7.2",
+        "codeceptjs": "^3.0.7",
+        "faker": "^5.5.3",
+        "playwright": "^1.11.0",
+        "puppeteer": "2.0.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "int-test": "mocha --require babel-core/register --recursive test",
+        "codeceptjs": "codeceptjs run --steps",
+        "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
+        "codeceptjs:ui": "codecept-ui --app",
+        "codeceptjs:demo": "codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+        "codeceptjs:demo:headless": "HEADLESS=true codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+        "codeceptjs:demo:ui": "codecept-ui --app  -c node_modules/@codeceptjs/examples"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@gitlab.com/crosstech/qc_automation_05_2021.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://gitlab.com/crosstech/qc_automation_05_2021/issues"
+    },
+    "homepage": "https://gitlab.com/crosstech/qc_automation_05_2021#readme",
+    "keywords": []
+}
